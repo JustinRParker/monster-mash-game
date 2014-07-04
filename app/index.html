@@ -22,27 +22,38 @@
         <!-- endbuild -->
     </head>
     <body>
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/underscore/underscore.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+      <!-- build:js scripts/main.js -->
+      <script src="scripts/main.js"></script>
+      <!-- endbuild -->
+
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
-        <!-- THIS IS JUST SOME EXAMPLE CODE TO RELATE BACK TO OUR MAIN.JS FILE. 
-        YOU'LL NEED TO START YOUR GAME WITH THE ABILITY TO SELECT BETWEEN PLAYERS.
+
+        <!-- THIS IS JUST SOME EXAMPLE CODE TO RELATE BACK TO OUR MAIN.JS FILE.
+        YOU'LL NEED TO START YOUR GAME WITH THE ABILITY TO SELECT BETWEEN PLAYERS.-->
             <div class="container">
-                <div class="purple-people-eater"></div>
-                <div class="tina-fey"></div>
+                <Div class="Player">
+                  <a href="#" class="nunPlayer">Nun</a>
+                  <a href="#" class="priestPlayer">Priest</a>
+
+                </div>
+
+                <div class="Monster">
+
+                  <a href="#" id="btnAttack">Monster</a>
+
+                </div>
             </div>
-        </div> -->
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/underscore/underscore.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+
+
     </body>
 </html>
