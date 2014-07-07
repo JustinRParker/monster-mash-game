@@ -56,8 +56,6 @@ $(function(){
     $(".godzillaMonster").show();
   });
 
-  // $(".btnAttack").button();
-
   $('.attackGodzilla').click(function(){
     event.preventDefault();
     //Change health of monster
@@ -70,8 +68,8 @@ $(function(){
       alert('You won!');
       // todo: logic for play again
       if (window.confirm("Play Again?")) {
-  window.open("http://localhost:9000");
-}
+        window.open("http://localhost:9000");
+      }
     }
     else
     {
