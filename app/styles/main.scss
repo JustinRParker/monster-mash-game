@@ -1,3 +1,17 @@
 @import "../bower_components/bourbon/dist/bourbon";
 
 * { @include box-sizing(border-box); }
+
+
+.ninjaTurtleImage {
+  height: 10em;
+
+}
+
+.attackGodzilla {
+  height: 20em;
+}
+
+.ninjaImage{
+  height: 10em;
+}
