@@ -26,12 +26,12 @@ $(function(){
     name: 'Ninja Turtle'
   });
 
-  var priest = new Player({
-    name: 'priest'
+  var ninja = new Player({
+    name: 'Ninja'
   });
 
   var godzilla = new Monster({
-    name: 'godzilla'
+    name: 'Godzilla'
   });
 
   // ACTIONS
@@ -59,24 +59,23 @@ $(function(){
   $('.attackGodzilla').click(function(){
     event.preventDefault();
     //Change health of monster
-    godzilla.health = godzilla.health - 10;
+    godzilla.health = godzilla.health - 20;
 
     //Check to see if monster's health is 0
     if (godzilla.health === 0){
 
       //If true alert player that they won.
-      alert('You won!');
-      // todo: logic for play again
+      $('.health').html("You won!");  
+
       if (window.confirm("Play Again?")) {
-        window.open("http://localhost:9000");
+        window.open("", "_self");
       }
     }
     else
     {
-      //else alert health of monster
-      alert("Godzillia's Health:" + godzilla.health);
+      //else show health of monster
+      $('.health').html("Godzillia's Health: " + godzilla.health);
     }
 
-    // $(".priestImage").show();
   });
 });

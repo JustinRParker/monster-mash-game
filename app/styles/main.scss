@@ -3,13 +3,43 @@
 * { @include box-sizing(border-box); }
 
 
+.container{
+	max-width: 965px;
+	margin: auto;
+}
+
+.player{
+	text-align: center;
+	
+	.ninjaTurtlePlayer{
+		float: left;
+		display: block;
+	}
+	.ninjaPlayer{
+		float: right;
+		display: block;
+	}
+}
+
 .ninjaTurtleImage {
   height: 10em;
 
 }
 
+.godzillaMonster{
+	position: relative;
+	h2{
+		text-align: center;
+	}
+}
+
+.health{
+	text-align: center;
+}
+
 .attackGodzilla {
   height: 20em;
+  float: right;
 }
 
 .ninjaImage{
